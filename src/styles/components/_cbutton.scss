@@ -1,22 +1,72 @@
+@use 'sass:color';
+
 .cbutton {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
+    gap: 15px;
+    padding: 0 25px;
     border-radius: 1000px;
-    font-size: $text-xsmall;
-    border: none;
+    font-size: $text-xxsmall;
+    min-height: 55px;
+    cursor: pointer;
 }
 
-.cprimary-button {
+.base-button {
+    border: none;
+    color: #000000;
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+        border-bottom: 1px solid $dark-blue;
+    }
+}
+
+.primary-button {
     @extend .cbutton;
     background-color: $dark-blue;
     color: #ffffff;
+    border: none;
     & svg {
         fill: #ffffff;
     }
     & path {
         fill: #ffffff;
+    }
+    &:hover {
+        background: darken($dark-blue, 30%);
+    }
+}
+
+.secondary-button {
+    @extend .cbutton;
+    background-color: $green;
+    color: #ffffff;
+    border: none;
+    & svg {
+        fill: #ffffff;
+    }
+    & path {
+        fill: #ffffff;
+    }
+    &:hover {
+        background: darken($green, 30%);
+    }
+}
+
+.round-base-button {
+    border: 1px solid $light-grey;
+    border-radius: 50%;
+    width: 55px;
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+        background: $dark-blue;
+        & svg {
+            fill: #ffffff;
+        }
+        & path {
+            fill: #ffffff;
+        }
     }
 }

@@ -1,0 +1,115 @@
+.cheader {
+    display: flex;
+    min-height: 135px;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+
+    .logo-section {
+        background-color: $dark-blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 40px 5px 20px;
+        border-top-right-radius: 100px;
+        z-index: 3;
+    }
+
+    .buttons-section {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        color: #ffffff;
+
+        .info {
+            display: flex;
+            position: relative;
+            background: $deep-blue;
+            flex: 1;
+            justify-content: space-between;
+            padding: 0px 20px;
+
+            &::before {
+                content: '';
+                width: 60px;
+                height: 45px;
+                background: $deep-blue;
+                display: block;
+                position: absolute;
+                left: -40px;
+            }
+
+            &::after {
+                content: '';
+                width: 154px;
+                height: 77px;
+                background: #ffffff;
+                position: absolute;
+                display: block;
+                border-radius: 77px 77px 0 0;
+                bottom: -27px;
+                left: -146px;
+                z-index: 1;
+            }
+
+            .email {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 3px;
+                font-size: $text-xxsmall;
+                padding-top: 10px;
+                & path {
+                    fill: #ffffff;
+                }
+            }
+
+            .magazine-info {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                font-size: $text-xxsmall;
+                padding-right: 40px;
+                .label {
+                    font-weight: 200;
+                    padding-right: 5px;
+                }
+                .text {
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .navbar {
+            display: flex;
+            flex: 2;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            .home-icon {
+                & svg {
+                    fill: $green;
+                    scale: 0.8;
+                }
+                & path {
+                    fill: $green;
+                }
+            }
+            .contact-us {
+                display: flex;
+                gap: 20px;
+                .about-section {
+                    display: flex;
+                    gap: 15px
+                }
+                .apply-section {
+                    display: flex;
+                    gap: 5px;
+                }
+            }
+
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.info-section {
+    position: relative;
+    display: flex;
+    gap: 56px;
+    max-height: 350px;
+    z-index: 5;
+    margin : 0 20px 0 $base-margin;
+    .info {
+        flex: 1;
+    }
+    .image {
+        flex: 1;
+        transform: translateY(-310px);
+    }
+}

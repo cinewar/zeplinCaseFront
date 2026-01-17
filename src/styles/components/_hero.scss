@@ -1,0 +1,42 @@
+.hero-section {
+    min-height: 635px;
+    background: url("/images/slide1.png");
+    z-index: 4;
+    position: relative;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    .hero {
+        margin: 0 $base-margin;
+        max-width: 397px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            .hero-info {
+                display: flex;
+                gap: 25px;
+                & svg {
+                    fill: #ffffff;
+                }
+                & path {
+                    fill: #ffffff;
+                }
+                .item {
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    .label {
+                        font-weight: 200;
+                    }
+                    .text {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

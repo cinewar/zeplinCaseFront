@@ -1,2 +1,42 @@
 @import "_variables.scss";
 @import "components/_cbutton.scss";
+
+@import "components/_navbar.scss";
+@import "components/_hero.scss";
+@import "components/_infosection.scss";
+
+
+h1 {
+    font-size: $text-xxxlarge;
+    line-height: 38px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: $text-xxlarge;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: $text-xlarge;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+h4 {
+    font-size: $text-large;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: $text-medium;
+    line-height: 28px;
+}
+
+h6 {
+    font-size: $text-small;
+    line-height: 26px;
+}
+
