@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { CSSProperties } from "react";
+import { CSSProperties, JSX } from "react";
+import CIcon from "@/app/features/corecomponents/CIcon";
 
 interface ICButtonProps {
   text?: string;
-  icon?: string;
+  icon?: JSX.Element;
   iconLeft?: boolean;
   iconRight?: boolean;
   iconWidth?: number;
@@ -28,27 +29,12 @@ export default function CButton({
 }: ICButtonProps) {
   return (
     <>
-      <button className="cbutton" style={buttonStyle} onClick={onClick}>
-        {iconLeft && (
-          <Image
-            alt="icon left"
-            src={icon ?? ""}
-            width={iconWidth}
-            height={iconHeight}
-          />
-        )}
+      <button className="cprimary-button" style={buttonStyle} onClick={onClick}>
+        {iconLeft && icon && <CIcon icon={icon} />}
         <div className="cbutton-text" style={textStyle}>
           {text}
         </div>
-        {iconRight && (
-          <Image
-            className="cbutton-icon"
-            alt="icon right"
-            src={icon ?? ""}
-            width={24}
-            height={24}
-          />
-        )}
+        {iconRight && icon && <CIcon icon={icon} />}
       </button>
     </>
   );

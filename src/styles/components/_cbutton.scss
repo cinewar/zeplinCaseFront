@@ -7,5 +7,16 @@
     border-radius: 1000px;
     font-size: $text-xsmall;
     border: none;
-    
+}
+
+.cprimary-button {
+    @extend .cbutton;
+    background-color: $dark-blue;
+    color: #ffffff;
+    & svg {
+        fill: #ffffff;
+    }
+    & path {
+        fill: #ffffff;
+    }
 }
