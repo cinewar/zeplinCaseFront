@@ -1,0 +1,87 @@
+.footer {
+    min-height: 318px;
+    display: flex;
+    flex-direction: column;
+    background: #161f3c;
+    color: #ffffff;
+    .info {
+        flex: 1;
+        margin: 0 $base-margin;
+        display: flex;
+        flex-direction: column;
+        .label {
+            font-size: 16px;
+            font-weight: lighter;
+        }
+        .contact {
+            flex: 1.1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $light-grey;
+            & svg {
+                fill: #ffffff;
+            }
+            & path {
+                fill: #ffffff;
+            }
+            .personal {
+                flex: 1;
+                gap: 10px;
+                display: flex;
+                align-items: center;
+                .texts {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 10px;
+                    .email {
+                        display: flex;
+                        font-size: 16px;
+                        font-weight: lighter;
+                        align-items: center;
+                    }
+                    & svg {
+                        scale: 0.7;
+                    }
+                    & path {
+                        fill: $red;
+                    }
+                }
+            }
+            .email {
+                flex: 1;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                .texts {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+            .location {
+                flex: 1;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+        .privacy {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: lighter;
+            text-align: center;
+        }
+    }
+    .rights {
+        background: $red;
+        padding: 10px 0;
+        margin: auto;
+        color: #ffffff;
+        font-size: 15px;
+        text-align: center;
+        width: 100%;
+        font-weight: lighter;
+    }
+}
