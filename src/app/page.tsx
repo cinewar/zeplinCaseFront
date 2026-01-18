@@ -1,6 +1,7 @@
 import Hero from "./components/hero";
 import InfoSection from "./components/infosection";
 import Navbar from "./components/navbar";
+import NewPublishSection from "./components/newpublishsection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <InfoSection />
+      <NewPublishSection />
     </>
   );
 }

@@ -1,0 +1,22 @@
+.ccard {
+    flex: 1;
+    // min-height: 250px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 10px;
+    .stick {
+        position: absolute;
+        top: 50%;
+        left: -20px;
+        background: $red;
+        transform: rotate(270deg);
+        color: #ffffff;
+        padding: 10px;
+        border-bottom-left-radius: 20px ;
+        border-bottom-right-radius: 20px ;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+}

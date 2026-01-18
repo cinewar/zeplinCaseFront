@@ -9,7 +9,10 @@ interface ICButtonProps {
     | "base-button"
     | "primary-button"
     | "secondary-button"
-    | "round-base-button";
+    | "round-base-button"
+    | "round-primary-button"
+    | "tertiary-button"
+    | "pagination-button";
   text?: string;
   icon?: JSX.Element;
   iconLeft?: boolean;
@@ -17,6 +20,7 @@ interface ICButtonProps {
   onClick?: () => void;
   buttonStyle?: CSSProperties;
   textStyle?: CSSProperties;
+  disabled?: boolean;
 }
 
 export default function CButton({
@@ -28,10 +32,16 @@ export default function CButton({
   onClick,
   buttonStyle,
   textStyle,
+  disabled,
 }: ICButtonProps) {
   return (
     <>
-      <button className={type} style={buttonStyle} onClick={onClick}>
+      <button
+        disabled={disabled}
+        className={type}
+        style={buttonStyle}
+        onClick={onClick}
+      >
         {iconLeft && icon && <CIcon icon={icon} />}
         <div className="cbutton-text" style={textStyle}>
           {text}

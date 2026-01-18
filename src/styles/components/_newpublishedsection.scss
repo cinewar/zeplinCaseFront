@@ -1,0 +1,74 @@
+.new-publish-section {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin: 75px $base-margin;
+    .directing {
+        display: flex;
+        justify-content: space-between;
+        .pagination {
+            display: flex;
+            gap: 50px;
+            .texts {
+                display: flex;
+                flex-direction: column;
+                gap: 13px;
+                .up-title {
+                    color: $grey;
+                    font-size: $text-medium;
+                    font-weight: 400;
+                }
+                .title {
+                    color: $dark-blue;
+                }
+            }
+            .buttons {
+                display: flex;
+                gap: 12px;
+                align-items: end;
+                padding-bottom: 5px;
+            }
+        }
+    }
+    .cards {
+        display: flex;
+        gap: 10px;
+        .card-content {
+            display: flex;
+            padding: 10px;
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                .content-texts {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 7px;
+                    .title {
+                        color: $dark-blue;
+                    }
+                    .row-items {
+                        display: flex;
+                        gap: 10px;
+                    }
+                    .item {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        .label {
+                            font-weight: 200;
+                        }
+                        .text {
+                            font-weight: bold;
+                        }
+                    }
+                }
+                .buttons {
+                    display: flex;
+                    justify-content: end;
+                    gap: 5px;
+                }
+            }
+        }
+    }
+}

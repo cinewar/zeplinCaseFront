@@ -4,12 +4,35 @@
     gap: 56px;
     max-height: 350px;
     z-index: 5;
-    margin : 0 20px 0 $base-margin;
+    margin : 40px 20px 0 $base-margin;
+    
     .info {
         flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: start;
+        gap: 58px;
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 13px;
+            .up-title {
+                color: $grey;
+                font-size: $text-medium;
+                font-weight: 400;
+            }
+            .title {
+                color: $dark-blue;
+            }
+            p {
+                line-height: 25px;
+            }
+        }
     }
     .image {
         flex: 1;
-        transform: translateY(-310px);
+        transform: translateY(-330px);
     }
 }

@@ -8,8 +8,9 @@
     padding: 0 25px;
     border-radius: 1000px;
     font-size: $text-xxsmall;
-    min-height: 55px;
+    height: 55px;
     cursor: pointer;
+    min-width: 150px;
 }
 
 .base-button {
@@ -54,10 +55,34 @@
     }
 }
 
+.tertiary-button {
+    @extend .cbutton;
+    background-color: transparent;
+    color: $dark-grey;
+    border: 1px solid $light-grey;
+    & svg {
+        fill: #000000;
+    }
+    & path {
+        fill: #000000;
+    }
+    &:hover {
+        background: darken($dark-blue, 30%);
+        color: #ffffff;
+        & svg {
+            fill: #ffffff;
+        }
+        & path {
+            fill: #ffffff;
+        }
+    }
+}
+
 .round-base-button {
     border: 1px solid $light-grey;
     border-radius: 50%;
     width: 55px;
+    min-height: 55px;
     background: transparent;
     cursor: pointer;
     &:hover {
@@ -67,6 +92,58 @@
         }
         & path {
             fill: #ffffff;
+        }
+    }
+}
+
+.round-primary-button {
+    border-radius: 50%;
+    width: 55px;
+    min-height: 55px;
+    background: $dark-blue;
+    cursor: pointer;
+    & svg {
+        fill: #ffffff;
+    }
+    & path {
+        fill: #ffffff;
+    }
+    &:hover {
+        background: #ffffff;
+        & svg {
+            fill: #000000;
+        }
+        & path {
+            fill: #000000;
+        }
+    }
+}
+
+.pagination-button {
+    height: 50px;
+    min-width: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: none;
+    background: #f5f5f5;
+    cursor: pointer;
+    &:hover {
+        background: $dark-blue;
+        & svg {
+            fill: #ffffff;
+        }
+        & path {
+            fill: #ffffff;
+        }
+    }
+    &:disabled {
+        background: #e7eaf5;
+        & svg {
+            fill: $light-grey;
+        }
+        & path {
+            fill: $light-grey;
         }
     }
 }
