@@ -12,7 +12,8 @@ interface ICButtonProps {
     | "round-base-button"
     | "round-primary-button"
     | "tertiary-button"
-    | "pagination-button";
+    | "pagination-button"
+    | "send-button";
   text?: string;
   icon?: JSX.Element;
   iconLeft?: boolean;

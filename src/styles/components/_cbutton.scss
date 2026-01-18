@@ -55,6 +55,23 @@
     }
 }
 
+.send-button {
+    @extend .cbutton;
+    background-color: $red;
+    color: #ffffff;
+    border: none;
+    max-width:max-content;
+    & svg {
+        fill: #ffffff;
+    }
+    & path {
+        fill: #ffffff;
+    }
+    &:hover {
+        background: darken($red, 30%);
+    }
+}
+
 .tertiary-button {
     @extend .cbutton;
     background-color: transparent;
