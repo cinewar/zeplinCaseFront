@@ -3,7 +3,6 @@
     font-size: $text-badge;
     min-height: 24px;
     display: flex;
-    width:min-content;
     justify-content: center;
     align-items: center;
     padding: 0 10px;
@@ -22,4 +21,11 @@
     background: $turquoise-surf;
     min-height: 24px;
     border-radius: 1000px;
+}
+
+.environment-badge {
+    @extend .cbadge;
+    background: $dark-blue;
+    min-height: 24px;
+    border-radius: 8px;
 }

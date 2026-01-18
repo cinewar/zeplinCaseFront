@@ -60,7 +60,7 @@
     background-color: $red;
     color: #ffffff;
     border: none;
-    max-width:max-content;
+    max-width: max-content;
     & svg {
         fill: #ffffff;
     }
@@ -110,6 +110,20 @@
         & path {
             fill: #ffffff;
         }
+    }
+}
+
+.round-subtitle-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    min-height: 30px;
+    background: #f0f0f3;
+    & svg {
+        scale: 0.6;
     }
 }
 

@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React, { CSSProperties, ReactNode } from "react";
 import CBadge from "./cbadge";
 
 interface ICCardProps {
@@ -13,6 +13,7 @@ interface ICCardProps {
   stick?: boolean;
   sticktext?: string;
   children?: ReactNode;
+  style?: CSSProperties;
 }
 
 export default function CCard({
@@ -22,9 +23,10 @@ export default function CCard({
   badgetype,
   sticktext,
   stick,
+  style,
 }: ICCardProps) {
   return (
-    <div className="ccard">
+    <div style={style} className="ccard">
       {badge && (
         <CBadge
           badgeStyle={{ position: "absolute", top: 16, right: 16 }}

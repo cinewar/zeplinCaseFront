@@ -3,6 +3,7 @@ import InfoSection from "./components/infosection";
 import Navbar from "./components/navbar";
 import NewPublishSection from "./components/newpublishsection";
 import NoticeSection from "./components/notice-section";
+import WritingSection from "./components/writingsections";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <InfoSection />
       <NewPublishSection />
       <NoticeSection />
+      <WritingSection />
     </>
   );
 }

@@ -11,6 +11,7 @@ interface ICButtonProps {
     | "secondary-button"
     | "round-base-button"
     | "round-primary-button"
+    | "round-subtitle-button"
     | "tertiary-button"
     | "pagination-button"
     | "send-button";
